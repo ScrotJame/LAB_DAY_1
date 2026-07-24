@@ -474,7 +474,7 @@ def run_assistant(
 
         stream = retry_with_backoff(
             lambda: client.chat.completions.create(
-                model=OPENAI_MODEL,
+                model=OPENAI_MINI_MODEL,
                 messages=messages,
                 stream=True,
             )
